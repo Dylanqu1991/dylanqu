@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>内容展示平台</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="logo">InsightHub</span>
+        <span class="tagline">连接经验、趋势与合作</span>
+      </div>
+      <nav class="top-nav">
+        <a href="#experience" class="active">经验分享</a>
+        <a href="#trend">风向标</a>
+        <a href="#project">项目拆解</a>
+        <a href="#resources">资源对接</a>
+      </nav>
+      <div class="cta-group">
+        <button class="primary">立即加入</button>
+        <button class="ghost">发布内容</button>
+      </div>
+    </header>
+
+    <main class="content-layout">
+      <aside class="article-list" aria-label="文章标题列表">
+        <header>
+          <h2>最新文章</h2>
+          <div class="filters">
+            <button class="chip active">全部</button>
+            <button class="chip">热门</button>
+            <button class="chip">最新</button>
+          </div>
+        </header>
+        <ul>
+          <li class="article-item selected">
+            <h3>让内部知识库真正活起来的五个策略</h3>
+            <p>3 分钟前 · 经验分享</p>
+          </li>
+          <li class="article-item">
+            <h3>AI 产品迭代的 72 小时观察</h3>
+            <p>1 小时前 · 风向标</p>
+          </li>
+          <li class="article-item">
+            <h3>社区增长项目拆解：从 0 到 10 万用户</h3>
+            <p>昨天 · 项目拆解</p>
+          </li>
+          <li class="article-item">
+            <h3>高校创新资源对接清单</h3>
+            <p>2 天前 · 资源对接</p>
+          </li>
+        </ul>
+        <button class="ghost full-width">浏览更多文章</button>
+      </aside>
+
+      <section class="article-detail" aria-label="文章详情">
+        <article>
+          <header>
+            <span class="category experience">经验分享</span>
+            <h1>让内部知识库真正活起来的五个策略</h1>
+            <p class="meta">作者：林橙 · 运营负责人 · 更新于 3 分钟前</p>
+          </header>
+          <figure class="cover">
+            <img src="imgs/11.png" alt="知识库协作插画" />
+            <figcaption>打造结构化、可复用的经验资产</figcaption>
+          </figure>
+          <div class="body">
+            <p>
+              知识库不仅是内容的仓库，更是协同的中枢。本文分享五个让团队持续贡献、复用和优化经验的关键策略，帮助你把沉睡的文档重新激活。
+            </p>
+            <h2>1. 建立统一的信息架构</h2>
+            <p>
+              通过明确的命名规范、标签体系和目录结构，让成员能在 30 秒内定位到需要的内容。不要害怕设定模板，结构化能加速协作效率。
+            </p>
+            <h2>2. 把贡献者转化为维护者</h2>
+            <p>
+              设定清晰的维护周期和责任人，通过积分、展示墙等激励方式，让贡献者对内容质量负责。知识库的持续可用性，依赖持续的更新机制。
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <aside class="category-intro" aria-label="类别简介">
+        <div class="card" id="experience">
+          <h2>经验分享</h2>
+          <p>
+            邀请一线操盘手输出实战经验，覆盖运营、产品、市场、组织管理等模块，帮助你快速复用成熟的方法论。
+          </p>
+          <ul>
+            <li>实操复盘</li>
+            <li>团队协作最佳实践</li>
+            <li>工具与流程建议</li>
+          </ul>
+        </div>
+
+        <div class="card" id="trend">
+          <h2>风向标</h2>
+          <p>
+            聚合行业动态与前沿洞察，解读市场趋势与政策变化，为策略决策提供可靠依据。
+          </p>
+        </div>
+
+        <div class="card" id="project">
+          <h2>项目拆解</h2>
+          <p>
+            深入剖析典型项目的目标、过程与结果指标，提炼可以直接复制的执行步骤与资源组合。
+          </p>
+        </div>
+
+        <div class="card" id="resources">
+          <h2>资源对接</h2>
+          <p>
+            建立高校、企业、机构之间的合作通道，帮助团队找到合适的伙伴与资源支持。
+          </p>
+          <button class="primary full-width">预约对接顾问</button>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
