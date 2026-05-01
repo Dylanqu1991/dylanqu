@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>家里有数 - UI 预览</title>
+    <style>
+      :root {
+        --bg: #f4f5f8;
+        --card: #ffffff;
+        --text: #1f2430;
+        --sub: #8a90a2;
+        --blue: #4c7dff;
+        --line: #e9ecf3;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 28px 18px 40px;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 0 0 8px;
+      }
+      .desc {
+        margin: 0 0 22px;
+        color: var(--sub);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 18px;
+      }
+      .phone {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 18px rgba(24, 33, 66, 0.06);
+      }
+      .img-box {
+        background: #f8f9fc;
+        padding: 12px;
+      }
+      .img-box img {
+        width: 100%;
+        display: block;
+        border-radius: 12px;
+      }
+      .meta {
+        padding: 12px 14px 16px;
+      }
+      .meta h2 {
+        margin: 0;
+        font-size: 18px;
+      }
+      .meta p {
+        margin: 6px 0 0;
+        color: var(--sub);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+      .checklist {
+        margin-top: 20px;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .checklist h3 {
+        margin: 0 0 10px;
+      }
+      .checklist ul {
+        margin: 0;
+        padding-left: 18px;
+        color: #3a4356;
+      }
+      .checklist li + li {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>家里有数 · HTML 视觉确认版</h1>
+      <p class="desc">用于快速确认 v1.1 信息架构与页面风格，下一步可直接拆组件实现小程序页面。</p>
+
+      <section class="grid" aria-label="核心三页预览">
+        <article class="phone">
+          <div class="img-box"><img src="imgs/333333.jpeg" alt="首页（全部视图）" /></div>
+          <div class="meta">
+            <h2>首页（全部视图）</h2>
+            <p>统一展示“今日提醒 / 即将到期”，支持完成、提醒他、添加提醒。突出「谁负责」与到期风险。</p>
+          </div>
+        </article>
+
+        <article class="phone">
+          <div class="img-box"><img src="imgs/333333.jpeg" alt="家庭页" /></div>
+          <div class="meta">
+            <h2>家庭页（协同中心）</h2>
+            <p>成员管理 + 家庭任务 + 家庭日程，重点体现负责人和「提醒他」协同动作。</p>
+          </div>
+        </article>
+
+        <article class="phone">
+          <div class="img-box"><img src="imgs/333333.jpeg" alt="我的页" /></div>
+          <div class="meta">
+            <h2>我的页（设置与统计）</h2>
+            <p>个人资料、提醒设置、分类管理、数据统计与回收站，为后续会员能力扩展预留入口。</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="checklist">
+        <h3>本次确认项</h3>
+        <ul>
+          <li>Tab 结构：首页 / 家庭 / 我的</li>
+          <li>核心定位：不是待办工具，而是家庭责任系统</li>
+          <li>关键动作：完成提醒、提醒他、添加提醒</li>
+          <li>下一步建议：按页面拆分组件（卡片、筛选、时间轴、成员条）</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
